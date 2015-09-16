@@ -20,5 +20,8 @@ In order to run a scenario, copy:
 In order to replicate a scenario, get from ftp site bag files and then:
 
           roslaunch smart_rdk repScenario_robil2.launch scen:=work_space/<dirofsampl>
+          
+          Additional Parameters: st - start time in seconds
+                                 dt - duration in seconds
 
 
