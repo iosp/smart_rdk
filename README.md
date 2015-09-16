@@ -11,7 +11,9 @@ Install:
 6. source smart_rdk/devel/setup.bash
 
 
-In order to run a scenario, copy scen.SFV to smart_rdk/src/smart_rdk/work_space/scenario_1/scen.SFV and then:
+In order to run a scenario, copy:
+     scen.SFV, scenarioEnv.world,  scenarioMission.bag to:
+             smart_rdk/src/smart_rdk/work_space/scenario_1/ and then:
 
           roslaunch smart_rdk runScenario_robil2.launch
                         
