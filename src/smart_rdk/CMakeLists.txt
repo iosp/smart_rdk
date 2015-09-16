@@ -6,7 +6,7 @@ project(smart_rdk)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   cmake_modules
-  fcl
+#  fcl
   gazebo_msgs
   robil_msgs
   rosbag
@@ -16,11 +16,11 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 ## System dependencies are found with CMake's conventions
-find_package(Boost REQUIRED COMPONENTS system thread filesystem)
+#find_package(Boost REQUIRED COMPONENTS system thread filesystem)
 
-find_package(TinyXML REQUIRED)
+#find_package(TinyXML REQUIRED)
 
-find_package(OpenCV REQUIRED)
+#find_package(OpenCV REQUIRED)
                             
 find_package(Gazebo REQUIRED)
 
@@ -94,8 +94,9 @@ FIND_PACKAGE(PythonLibs 2.7 REQUIRED)
 catkin_package(
    INCLUDE_DIRS include
 #  LIBRARIES smart_rdk
-   CATKIN_DEPENDS cmake_modules fcl gazebo_msgs robil_msgs rosbag roscpp rospy std_msgs
-   DEPENDS system_lib TinyXML
+   CATKIN_DEPENDS cmake_modules gazebo_msgs robil_msgs rosbag roscpp rospy std_msgs
+#   CATKIN_DEPENDS cmake_modules fcl gazebo_msgs robil_msgs rosbag roscpp rospy std_msgs
+#   DEPENDS system_lib TinyXML
 )
 
 ###########
