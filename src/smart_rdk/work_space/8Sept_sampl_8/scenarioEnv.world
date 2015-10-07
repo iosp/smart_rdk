@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+    <world name="default">
+        <include>
+            <uri>model://sun</uri>
+        </include>
+        <scene>
+            <sky>
+                <time>10</time>
+                <clouds>
+                    <speed>5</speed>
+                    <direction>1.14</direction>
+                    <humidity>0.3</humidity>
+                </clouds>
+            </sky>
+        </scene>
+        <gui>
+            <camera name="camera_pose">
+                <pose>80 -60 60 0 0.5 2</pose>
+            </camera>
+        </gui>
+        <include>
+            <uri>model://nisuy100x100x2</uri>
+        </include>
+        <include>
+            <uri>model://bobcat</uri>
+            <pose>60 15 1.37059 0 0 1.5</pose>
+            <name>Sahar</name>
+        </include>
+        <include>
+            <uri>model://barrel1</uri>
+            <pose>18.3648 93.9919 1.5498 0.00208294 0.0852274 2.45633</pose>
+            <scale>1 1 1</scale>
+            <name>object0</name>
+        </include>
+        <include>
+            <uri>model://barrel1</uri>
+            <pose>53.1415 25.7586 0.810971 -0.0520207 -0.0727486 -2.08</pose>
+            <scale>1 1 1</scale>
+            <name>obstacle_on_path0</name>
+        </include>
+        <include>
+            <uri>model://barrel1</uri>
+            <pose>43.8853 45.3658 1.49336 0.0191201 -0.074926 -1.07769</pose>
+            <scale>1 1 1</scale>
+            <name>obstacle_on_path1</name>
+        </include>
+        <include>
+            <uri>model://barrel1</uri>
+            <pose>49.0232 32.6658 1.27852 -0.057057 0.0848658 -2.25682</pose>
+            <scale>1 1 1</scale>
+            <name>obstacle_on_path2</name>
+        </include>
+        <include>
+            <uri>model://wp_mark</uri>
+            <pose>51.9323 28.1242 1.08235 0 0 0</pose>
+            <name>wp_mark0</name>
+        </include>
+        <include>
+            <uri>model://wp_mark</uri>
+            <pose>43.6157 45.0623 1.56078 0 0 0</pose>
+            <name>wp_mark1</name>
+        </include>
+        <include>
+            <uri>model://wp_mark</uri>
+            <pose>37.3217 62.1201 1.4902 0 0 0</pose>
+            <name>wp_mark2</name>
+        </include>
+    </world>
+</sdf>
