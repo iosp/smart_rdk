@@ -11,7 +11,7 @@ Install:
 6. source smart_rdk/devel/setup.bash
 
 
-In order to run a scenario, copy:
+In order to run a scenario, copy from the directory of the sample you want to run, for example: 8Sept_sampl_8, the files:
      scen.SFV, scenarioEnv.world,  scenarioMission.bag to:
              smart_rdk/src/smart_rdk/work_space/scenario_1/ and then:
 
