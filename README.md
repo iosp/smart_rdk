@@ -23,5 +23,6 @@ In order to replicate a scenario, get from ftp site bag files and then:
           
           Additional Parameters: st - start time in seconds
                                  dt - duration in seconds
+                                FORMAT st:=xx for ex. st:=30
 
 
