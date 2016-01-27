@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+    <world name="default">
+        <include>
+            <uri>model://sun</uri>
+        </include>
+        <scene>
+            <sky>
+                <time>10</time>
+                <clouds>
+                    <speed>5</speed>
+                    <direction>1.14</direction>
+                    <humidity>0.3</humidity>
+                </clouds>
+            </sky>
+        </scene>
+        <gui>
+            <camera name="camera_pose">
+                <pose>80 -60 60 0 0.5 2</pose>
+            </camera>
+        </gui>
+        <include>
+            <uri>model://nisuy100x100x2</uri>
+        </include>
+        <include>
+            <uri>model://bobtank</uri>
+            <pose>60 15 1.37059 0 0 1.5</pose>
+            <name>Sahar</name>
+        </include>
+        <include>
+            <uri>model://barrel1</uri>
+            <pose>6.9422 46.7042 1.59873 -0.0480106 0.0681706 1.17807</pose>
+            <scale>1 1 1</scale>
+            <name>object0</name>
+        </include>
+        <include>
+            <uri>model://barrel1</uri>
+            <pose>61.6161 24.5029 0.703203 -0.0829537 0.0903425 -0.91805</pose>
+            <scale>1 1 1</scale>
+            <name>obstacle_on_path0</name>
+        </include>
+        <include>
+            <uri>model://wp_mark</uri>
+            <pose>62.0812 25.6921 0.815686 0 0 0</pose>
+            <name>wp_mark0</name>
+        </include>
+        <include>
+            <uri>model://wp_mark</uri>
+            <pose>61.1737 40.0351 0.839216 0 0 0</pose>
+            <name>wp_mark1</name>
+        </include>
+        <include>
+            <uri>model://wp_mark</uri>
+            <pose>60.4422 56.9654 0.917647 0 0 0</pose>
+            <name>wp_mark2</name>
+        </include>
+    </world>
+</sdf>
