@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Missions>
+        <Mission>
+            <MissionID>0</MissionID>
+            <MissionAssignerID>0</MissionAssignerID>
+            <MissionExecuterID>0</MissionExecuterID>
+            <PresenceVector>0</PresenceVector>
+            <AutonomyLevel>Manual</AutonomyLevel>
+            <UnmannedSystem>0</UnmannedSystem>
+            <WeatherCondition>Sunny</WeatherCondition>
+            <Duration>0</Duration>
+            <OperationalArea>0</OperationalArea>
+            <ParentMissionID>0</ParentMissionID>
+            <MissionStartID>10</MissionStartID>
+            <MissionEndID>
+                <unsignedShort>20</unsignedShort>
+            </MissionEndID>
+            <Tasks>
+                <Task xsi:type="TaskStart">
+                    <TaskType>start</TaskType>
+                    <TaskID>10</TaskID>
+                    <TaskAssignerID>0</TaskAssignerID>
+                    <TaskExecuterID>0</TaskExecuterID>
+                    <Duration>0</Duration>
+                </Task>
+            </Tasks>
+        </Mission>
+    </Missions>
+</DataSource>
