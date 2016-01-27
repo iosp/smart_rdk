@@ -14,20 +14,28 @@ Install:
 7. source smart_rdk/devel/setup.bash
 
 
+Running:
+
+
 In order to run a scenario, copy from the directory of the sample you want to run, for example: 8Sept_sampl_8, the files:
      scen.SFV, scenarioEnv.world,  scenarioMission.bag to:
              smart_rdk/src/smart_rdk/work_space/scenario_1/ and then:
 
-          roslaunch smart_rdk runScenario_robil2.launch
+          bobcat:  roslaunch smart_rdk runScenario_robil2.launch
+          bobtank: roslaunch smart_rdk runScenario_robil2_bobtank.launch
     or:
-          roslaunch smart_rdk runScenario_robil2.launch scen:=<dirofsampl>
-                        
-In order to replicate a scenario, get from ftp site bag files and then:
+          bobcat: roslaunch smart_rdk runScenario_robil2.launch scen:=<dirofsampl>
+          bobtank: roslaunch smart_rdk runScenario_robil2_bobtank.launch scen:=<dirofsampl>
+              
+In order to replicate a scenario, get from ftp or drive site the bag files and then:
 
-          roslaunch smart_rdk repScenario_robil2.launch scen:=<dirofsampl>
-          
+          bobcat: roslaunch smart_rdk repScenario_robil2.launch scen:=<dirofsampl>
+          bobtank: roslaunch smart_rdk repScenario_robil2_bobtank.launch scen:=<dirofsampl>
           Additional Parameters: st - start time in seconds
                                  dt - duration in seconds
                                 FORMAT st:=xx for ex. st:=30
 
+More on bobtank:
+
+When launching the repScenario version, don't hit the "play" button on the Gazebo client. Hit the run on the terminal.
 
