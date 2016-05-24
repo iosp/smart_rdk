@@ -27,10 +27,11 @@ In order to run a scenario, copy from the directory of the sample you want to ru
           bobcat: roslaunch smart_rdk runScenario_robil2.launch scen:=<dirofsampl>
           bobtank: roslaunch smart_rdk runScenario_robil2_bobtank.launch scen:=<dirofsampl>
               
-In order to replicate a scenario, get from ftp or drive site the bag files and then:
+In order to replicate a scenario, download the sampl_X directories in "~/smart_rdk/src/smart_rdk/work_space" and then:
 
           bobcat: roslaunch smart_rdk repScenario_robil2.launch scen:=<dirofsampl>
           bobtank: roslaunch smart_rdk repScenario_robil2_bobtank.launch scen:=<dirofsampl>
+          <dirofsampl> is the directory of the sample relatively to the work_space - for ex: sampl_1
           Additional Parameters: st - start time in seconds
                                  dt - duration in seconds
                                 FORMAT st:=xx for ex. st:=30
