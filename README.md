@@ -36,7 +36,18 @@ In order to replicate a scenario, download the sampl_X directories in "~/smart_r
                                  dt - duration in seconds
                                 FORMAT st:=xx for ex. st:=30
 
-More on bobtank:
+VERSION 28-06-2016:
+- Install: same
+- Replicate: bobtank ONLY
+            roslaunch smart_rdk repScenario_robil2_bobtank.launch scen:=work_space/<dirofsampl>
+- Running: bobtank ONLY
+           In order to run a scenario, copy from the directory of the sample you want to run, the files:
+     scen.SFV, scenarioEnv.world,  scenarioMission.bag and
+              the directory scenarioSystemModels to smart_rdk/src/smart_rdk/work_space/scenario_1/ and then:
+           roslaunch smart_rdk runScenario_robil2_bobtank_gazebo.launch
+            
+Note:
 
 When launching the repScenario version, don't hit the "play" button on the Gazebo client. Hit the run on the terminal.
+
 
